@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh; /* Заполнение всей высоты окна браузера */
+        }
+        iframe {
+            border: none;
+        }
+        .iframe-container {
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .iframe-container:first-child {
+            flex: 1; /* Занимает 1/3 высоты на экране */
+        }
+        .iframe-container:last-child {
+            flex: 1; /* Занимает 2/3 высоты на экране */
+        }
+    </style>
+</head>
+<body>
+    <div class="iframe-container">
+        <iframe 
+            src="https://datalens.yandex/lpkfvr99zyu8a?_theme=light" 
+            width="100%" 
+            height="100%"
+            frameborder="0"
+            scrolling="auto"
+            allowfullscreen
+
+        ></iframe>
+    </div>
+    <div class="iframe-container">
+        <iframe 
+            src="https://docs.google.com/spreadsheets/d/15q0MMbEGkTJP1prQPlwv3M0EOagM5I2hrklhGLMr_TY/edit?usp=sharing&gid=Sheet1"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            scrolling="auto"
+            allowfullscreen
+        ></iframe>
+    </div>
+</body>
+</html>
+
+
+
